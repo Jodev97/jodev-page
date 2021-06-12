@@ -17,17 +17,29 @@
       <div class="row align-items-center">
         <div class="col">
             <div class="row">
-                <b-card title="COUNTRY">
-                    <p class="h3 mb-2">Temperature {{weathermeter.temperature}}°C <b-icon icon="thermometer" animation="throb" font-scale="1"></b-icon></p>
-                </b-card>
+                <h1>{{weathermeter.name}}</h1>
+                <p class="h5"> <b-icon icon="map-fill"></b-icon> lon:{{weathermeter.coord.lon}} lat:{{weathermeter.coord.lat}}</p>
             </div>
         </div>
         <div class="col">
             <b-card title="TEMPERATURE">
                 <p class="h3 mb-2">{{weathermeter.temperature}}°C <b-icon icon="thermometer" animation="throb" font-scale="1"></b-icon></p>
+                <span>max: min:</span>
             </b-card>
         </div>
         <div class="col">
+            <div class="row">
+                <p class="h5">Wind</p>
+                <p class="h6">speed:{{weathermeter.wind_speed}}m/s / dir:{{weathermeter.wind_speed}}° </p>
+            </div>
+            <div class="row">
+                <p class="h5">Humidity</p>
+                <p class="h5">{{weathermeter.Humidity}}</p>
+            </div>
+            <div class="row">
+                <p class="h5">Pressure</p>
+                <p class="h5">{{weathermeter.Pressure}}</p>
+            </div>
         </div>
     </div>
   </div>

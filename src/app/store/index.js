@@ -10,7 +10,15 @@ Vue.use( Vuex )
 export default new Vuex.Store({
     state: {
         weathermeter:{
-            temperature:0
+            name:'',
+            temperature:0,
+            coord:'',
+            clouds:'',
+            humidity:'',
+            pressure:'',
+            wind_direction:'',
+            wind_speed:'',
+            contry:''
         }
     },
     actions,
