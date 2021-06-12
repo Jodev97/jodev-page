@@ -9,7 +9,9 @@ Vue.use( Vuex )
 
 export default new Vuex.Store({
     state: {
-        msg: 'Hello Word'
+        weathermeter:{
+            temperature:0
+        }
     },
     actions,
     getters,

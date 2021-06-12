@@ -1,5 +1,6 @@
 export const getters={
-    GET_DATAS:(state)=>{
-        return state.msg
+
+    GET_WEATHERMETER:(state)=>{
+        return state.weathermeter
     }
 }
